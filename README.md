@@ -9,3 +9,6 @@ Conway's Game of Life is a cellular automataton simulation on a 2D grid, where e
 4) A dead cell with exactly three neighbours becomes alive (reproduction).
 
 These rules are applied before every generation and are then displayed. Even with these simple rules complexity emerges, and based on starting positions different patterns can emerge. 
+
+# Demo
+Currently only some start patterns are supported. The default start is a random simulation. However, passing 'g' as a command line argument will start with the glider pattern, 'gg' is the glider gun, and 'ss' is the spaceship.
