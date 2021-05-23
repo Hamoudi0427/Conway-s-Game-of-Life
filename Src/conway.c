@@ -18,7 +18,7 @@ int main(int argc, char* argv[])
     SDL_Delay(2000);
     
     //simulation options, with random generation being the default
-    int start_pos = 2;
+    int start_pos = 0;
     if (argv[1] == 'g')
     {
         //glider
