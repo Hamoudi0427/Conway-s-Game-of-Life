@@ -33,4 +33,6 @@ Currently only some start patterns are supported. The default start is a random 
 2) Download and link SDL2 and add SDL2.dll to the project folder.
 3) Compile the program and run (to run different patterns use the command line arguments found above).
 
-
+# To- Do
+1) Gosper's Algorithm
+2) Add more patterns
