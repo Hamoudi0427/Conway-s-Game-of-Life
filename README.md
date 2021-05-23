@@ -12,3 +12,6 @@ These rules are applied before every generation and are then displayed. Even wit
 
 # Demo
 Currently only some start patterns are supported. The default start is a random simulation. However, passing 'g' as a command line argument will start with the glider pattern, 'gg' is the glider gun, and 'ss' is the spaceship.
+
+file:///C:/Users/Ahmed%20Hamoudi/Downloads/ezgif.com-gif-maker.gif
+
