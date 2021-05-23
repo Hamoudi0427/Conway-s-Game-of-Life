@@ -29,7 +29,7 @@ Currently only some start patterns are supported. The default start is a random 
 
 # Download and Installation
 
-1) Download files found in src (3 files in total).
+1) Download files found in src (3 files in total). A helpful tutorial can be found here: https://lazyfoo.net/tutorials/SDL/01_hello_SDL/index.php.
 2) Download and link SDL2 and add SDL2.dll to the project folder.
 3) Compile the program and run (to run different patterns use the command line arguments found above).
 
