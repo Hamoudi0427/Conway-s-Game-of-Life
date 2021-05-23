@@ -27,7 +27,7 @@ Currently only some start patterns are supported. The default start is a random 
   <img width="506" height="508" src="https://github.com/Hamoudi0427/Conway-s-Game-of-Life/blob/main/Img/spaceship.gif">
 </p>
 
-#Download and Installation
+# Download and Installation
 
 1) Download files found in src (3 files in total).
 2) Download and link SDL2 and add SDL2.dll to the project folder.
