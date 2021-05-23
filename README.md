@@ -26,3 +26,7 @@ Currently only some start patterns are supported. The default start is a random 
 <p align="center">
   <img width="506" height="508" src="https://github.com/Hamoudi0427/Conway-s-Game-of-Life/blob/main/Img/spaceship.gif">
 </p>
+
+#Download and Installation
+
+
