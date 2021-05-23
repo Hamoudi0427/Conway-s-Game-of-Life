@@ -14,7 +14,7 @@ These rules are applied before every generation and are then displayed. Even wit
 Currently only some start patterns are supported. The default start is a random simulation. However, passing 'g' as a command line argument will start with the glider pattern, 'gg' is the glider gun, and 'ss' is the spaceship. You can also use the left arrow key to slow down the simulation and the right arrow key to speed it up.
 
 <p align="center">
-  <src="https://github.com/Hamoudi0427/Conway-s-Game-of-Life/blob/main/Img/random.gif">
+  < img width="506" height="504" src="https://github.com/Hamoudi0427/Conway-s-Game-of-Life/blob/main/Img/random.gif">
 </p>
 
 
