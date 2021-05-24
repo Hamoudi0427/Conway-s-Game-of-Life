@@ -3,6 +3,7 @@
 #include <time.h>
 #include "helper.h"
 #include <SDL.h>
+#include <string.h>
 
 
 int main(int argc, char* argv[])
@@ -19,20 +20,23 @@ int main(int argc, char* argv[])
     
     //simulation options, with random generation being the default
     int start_pos = 0;
-    if (argv[1] == 'g')
+    if (argc == 2)
     {
-        //glider
-        start_pos = 1;
-    }
-    else if (argv[1] == 'gg')
-    {
-        //glider gun
-        start_pos = 2;
-    }
-    else if (argv[2] == 'ss')
-    {
-        //space ship
-        start_pos = 3;
+        if (strcmp(argv[1], "g") == 0)
+        {
+            //glider
+            start_pos = 1;
+        }
+        else if (strcmp(argv[1], "gg") == 0)
+        {
+            //glider gun
+            start_pos = 2;
+        }
+        else if (strcmp(argv[1], "ss") == 0)
+        {
+            //space ship
+            start_pos = 3;
+        }
     }
     
     //SDL initialization
