@@ -6,7 +6,7 @@
 
 
 //intializes map based on start position input
-void init_map(int map_array[100][100], int start_position)
+void init_map(Map map_array, int start_position)
 {
     if (start_position == 0)
     {
@@ -138,10 +138,10 @@ void init_map(int map_array[100][100], int start_position)
 
 
 //updates map to next generation 
-void update_map(int map_array[100][100], int* generation_p, int* pop)
+void update_map(Map map_array, int* generation_p, int* pop)
 {
     //creates new temp array
-    int tmp[100][100] = {0};
+    Map tmp = {0};
 
     //updates map 
     for (int i = 0; i < MAP_SIZE; i++)
@@ -199,7 +199,7 @@ void update_map(int map_array[100][100], int* generation_p, int* pop)
 }
 
 //transfer tmp map back to original
-void copy_map(int map_array[100][100], int tmp_array[100][100])
+void copy_map(Map map_array, Map tmp_array)
 {
     for (int i = 0; i < MAP_SIZE; i++)
     {
@@ -218,7 +218,7 @@ void copy_map(int map_array[100][100], int tmp_array[100][100])
 }
 
 //counts population
-void count_pop(int map_array[100][100], int* pop)
+void count_pop(Map map_array, int* pop)
 {
     int current_pop = 0;
 

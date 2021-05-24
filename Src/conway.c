@@ -60,7 +60,7 @@ int main(int argc, char* argv[])
     SDL_RenderPresent(renderer); //renders image on screen (draws)
 
     //simulation initialization
-    int map_array[100][100] = { 0 };
+    Map map_array = {0};
     int generation = 0;
     int* generation_p = &generation;
     int population = 0;
