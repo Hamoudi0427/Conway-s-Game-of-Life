@@ -144,9 +144,9 @@ void update_map(Map map_array, int* generation_p, int* pop)
     Map tmp = {0};
 
     //updates map 
-    for (int i = 0; i < MAP_SIZE; i++)
+    for (int y = 0; y < MAP_SIZE; y++)
     {
-        for (int j = 0; j < MAP_SIZE; j++)
+        for (int x = 0; x < MAP_SIZE; x++)
         {
             int count_neighbour = 0;
 
@@ -155,33 +155,33 @@ void update_map(Map map_array, int* generation_p, int* pop)
                 for (int b = 0; b < 3; b++)
                 {
                     //continues if it is out of array bounds
-                    if (i - 1 + a < 0 || i - 1 + a > MAP_SIZE - 1 || j - 1 + b < 0 || j - 1 + b > MAP_SIZE - 1)
+                    if (y - 1 + a < 0 || y - 1 + a > MAP_SIZE - 1 || x - 1 + b < 0 || x - 1 + b > MAP_SIZE - 1)
                     {
                         continue;
                     }
 
                     //counts value of neighbour
-                    count_neighbour += map_array[i - 1 + a][j - 1 + b];
+                    count_neighbour += map_array[y - 1 + a][x - 1 + b];
                 }
             }
 
             //update tmp based on if live or dead
-            if (map_array[i][j] == 0)
+            if (map_array[y][x] == 0)
             {
                 if (count_neighbour == 3)
                 {
-                    tmp[i][j] = 1;
+                    tmp[y][x] = 1;
                 }
             }
             else
             {
                 if (count_neighbour == 3 || count_neighbour == 4)
                 {
-                    tmp[i][j] = 1;
+                    tmp[y][x] = 1;
                 }
                 else
                 {
-                    tmp[i][j] = 0;
+                    tmp[y][x] = 0;
                 }
             }
         }
