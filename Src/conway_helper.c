@@ -201,17 +201,17 @@ void update_map(Map map_array, int* generation_p, int* pop)
 //transfer tmp map back to original
 void copy_map(Map map_array, Map tmp_array)
 {
-    for (int i = 0; i < MAP_SIZE; i++)
+    for (int y = 0; y < MAP_SIZE; y++)
     {
-        for (int j = 0; j < MAP_SIZE; j++)
+        for (int x = 0; x < MAP_SIZE; x++)
         {
-            if (tmp_array[i][j] == 1)
+            if (tmp_array[y][x] == 1)
             {
-                map_array[i][j] = 1;
+                map_array[y][x] = 1;
             }
             else
             {
-                map_array[i][j] = 0;
+                map_array[y][x] = 0;
             }
         }
     }
@@ -222,11 +222,11 @@ void count_pop(Map map_array, int* pop)
 {
     int current_pop = 0;
 
-    for (int i = 0; i < MAP_SIZE; i++)
+    for (int y = 0; y < MAP_SIZE; y++)
     {
-        for (int j = 0; j < MAP_SIZE; j++)
+        for (int x = 0; x < MAP_SIZE; x++)
         {
-            current_pop += map_array[i][j];
+            current_pop += map_array[y][x];
         }
     }
 
