@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "helper.h"
+#include "conway_helper.h"
 #include <SDL.h>
 #include <string.h>
 
